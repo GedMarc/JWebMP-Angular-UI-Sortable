@@ -13,7 +13,7 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  */
 enum AngularUISortableReferencePool implements ReferencePool
 {
-    AngularUISortable(new JavascriptReference("AngularTouch", 1.6, "bower_components/angular-ui-sortable/sortable.js"), null);
+    AngularUISortable(new JavascriptReference("AngularUISortable", 1.6, "bower_components/angular-ui-sortable/sortable.js"), null);
     /**
      * Any sub data
      */

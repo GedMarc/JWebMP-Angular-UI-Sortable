@@ -2,6 +2,7 @@ package za.co.mmagon.jwebswing.plugins.angularuisortable;
 
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.base.html.List;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * Angular UI Sortable Helper
@@ -9,6 +10,8 @@ import za.co.mmagon.jwebswing.base.html.List;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
+@ComponentInformation(name = "Angular UI Sortable", description = "This directive allows you to sort an array with drag & drop.",
+        url = "https://github.com/angular-ui/ui-sortable")
 public class AngularUISortable
 {
 

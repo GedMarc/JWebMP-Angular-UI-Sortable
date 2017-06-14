@@ -8,10 +8,10 @@ import za.co.mmagon.jwebswing.Page;
  *
  * @author Marc Magon
  */
-public class AngularUISortableConfiguratorTest extends BaseTestClass
+public class AngularUISortablePageConfiguratorTest extends BaseTestClass
 {
 
-    public AngularUISortableConfiguratorTest()
+    public AngularUISortablePageConfiguratorTest()
     {
     }
 

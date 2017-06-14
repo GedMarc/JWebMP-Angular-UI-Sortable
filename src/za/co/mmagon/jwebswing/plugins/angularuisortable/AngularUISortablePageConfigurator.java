@@ -3,7 +3,6 @@ package za.co.mmagon.jwebswing.plugins.angularuisortable;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 
@@ -20,24 +19,23 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
         pluginCategories = "angular,touch, ui,web ui, framework",
         pluginSubtitle = "Instantly make UL lists into drag and drop items.",
         pluginSourceUrl = "https://github.com/angular-ui/ui-sortable",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI_Sortable/wiki",
+        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Sortable/wiki",
         pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Sortable",
         pluginIconUrl = "",
         pluginIconImageUrl = "",
         pluginOriginalHomepage = "https://github.com/angular-ui/ui-sortable",
         pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUISortable.jar/download"
 )
-@ComponentInformation(name = "Angular UI Sortable", description = "This directive allows you to sort an array with drag & drop.",
-        url = "https://github.com/angular-ui/ui-sortable")
-class AngularUISortableConfigurator extends PageConfigurator
+
+class AngularUISortablePageConfigurator extends PageConfigurator
 {
 
     private static final long serialVersionUID = 1L;
 
     /*
-     * Constructs a new AngularUISortableConfigurator
+     * Constructs a new AngularUISortablePageConfigurator
      */
-    public AngularUISortableConfigurator()
+    public AngularUISortablePageConfigurator()
     {
         //Nothing needed
     }
