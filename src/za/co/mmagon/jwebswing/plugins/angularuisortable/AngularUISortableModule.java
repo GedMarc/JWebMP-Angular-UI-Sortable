@@ -10,20 +10,20 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 class AngularUISortableModule extends AngularModuleBase
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularUISortableModule
-     */
-    public AngularUISortableModule()
-    {
-        super("ui.sortable");
-    }
-
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularUISortableModule
+	 */
+	public AngularUISortableModule()
+	{
+		super("ui.sortable");
+	}
+	
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }

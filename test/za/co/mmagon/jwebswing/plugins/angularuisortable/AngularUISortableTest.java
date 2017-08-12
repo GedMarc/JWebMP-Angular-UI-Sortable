@@ -9,22 +9,21 @@ import org.junit.Test;
 import za.co.mmagon.jwebswing.base.html.List;
 
 /**
- *
  * @author Marc Magon
  */
 public class AngularUISortableTest
 {
 
-    public AngularUISortableTest()
-    {
-    }
+	public AngularUISortableTest()
+	{
+	}
 
-    @Test
-    public void testSomeMethod()
-    {
-        List list = new List();
-        AngularUISortable.applyToList(list);
-        System.out.println(list.toString(true));
-    }
+	@Test
+	public void testSomeMethod()
+	{
+		List list = new List();
+		AngularUISortable.applyToList(list);
+		System.out.println(list.toString(true));
+	}
 
 }
