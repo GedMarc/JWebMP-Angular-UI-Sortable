@@ -24,19 +24,20 @@ enum AngularUISortableReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private AngularUISortableReferencePool()
+	AngularUISortableReferencePool()
 	{
 
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private AngularUISortableReferencePool(String data)
+	AngularUISortableReferencePool(String data)
 	{
 
 	}
-
-	private AngularUISortableReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	
+	AngularUISortableReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)

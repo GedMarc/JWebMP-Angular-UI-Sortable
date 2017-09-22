@@ -13,11 +13,11 @@ import za.co.mmagon.jwebswing.base.html.List;
  */
 public class AngularUISortableTest
 {
-
+	
 	public AngularUISortableTest()
 	{
 	}
-
+	
 	@Test
 	public void testSomeMethod()
 	{
@@ -25,5 +25,5 @@ public class AngularUISortableTest
 		AngularUISortable.applyToList(list);
 		System.out.println(list.toString(true));
 	}
-
+	
 }
