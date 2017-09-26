@@ -346,7 +346,7 @@
                                 helper = ui.helper;
 
                                 // If this list has a placeholder (the connected lists won't),
-                                // don't inlcude it in saved nodes.
+                                // don't inlcude it in 
                                 var placeholder = getPlaceholderElement(element);
                                 if (placeholder && placeholder.length) {
                                     var excludes = getPlaceholderExcludesludes(element, placeholder);
