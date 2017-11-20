@@ -5,6 +5,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.angularuisortable;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.base.html.List;
 
@@ -23,7 +24,9 @@ public class AngularUISortableTest
 	{
 		List list = new List();
 		AngularUISortable.applyToList(list);
+		list.setID("id");
 		System.out.println(list.toString(true));
+		Assertions.assertEquals("<ul id=\"id\" ui-sortable></ul>", list.toString(0));
 	}
 	
 }
