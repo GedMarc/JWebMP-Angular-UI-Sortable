@@ -27,9 +27,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUISortable.jar/download"
 ) class AngularUISortablePageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new AngularUISortablePageConfigurator
 	 */
@@ -37,15 +37,15 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 	{
 		//Nothing needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
-			AngularPageConfigurator.setRequired(page.getBody(), true);
-			
+			JQueryPageConfigurator.setRequired(true);
+			AngularPageConfigurator.setRequired(true);
+
 			page.getBody().addJavaScriptReference(AngularUISortableReferencePool.AngularUISortable.getJavaScriptReference());
 			page.getAngular().getAngularModules().add(new AngularUISortableModule());
 		}
