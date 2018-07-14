@@ -28,7 +28,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularUISortableReferencePool implements ReferencePool
+enum AngularUISortableReferencePool
+		implements ReferencePool
 {
 	AngularUISortable(new JavascriptReference("AngularUISortable", 1.6, "bower_components/angular-ui-sortable/sortable.js"), null);
 	/**
