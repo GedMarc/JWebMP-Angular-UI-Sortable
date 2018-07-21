@@ -17,9 +17,9 @@
 
 package com.jwebmp.plugins.angularuisortable;
 
-import com.jwebmp.base.ComponentHierarchyBase;
-import com.jwebmp.base.html.List;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.html.List;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * Angular UI Sortable Helper

@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.angularuisortable;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

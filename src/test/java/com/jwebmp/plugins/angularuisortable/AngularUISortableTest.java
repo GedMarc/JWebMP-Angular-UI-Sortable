@@ -22,7 +22,7 @@
  */
 package com.jwebmp.plugins.angularuisortable;
 
-import com.jwebmp.base.html.List;
+import com.jwebmp.core.base.html.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
