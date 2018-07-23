@@ -18,10 +18,10 @@
 package com.jwebmp.plugins.angularuisortable;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * The Angular UI Sortable Configurator
@@ -41,12 +41,10 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://github.com/angular-ui/ui-sortable",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUISortable.jar/download") class AngularUISortablePageConfigurator
-		extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUISortable.jar/download")
+public class AngularUISortablePageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new AngularUISortablePageConfigurator
 	 */
@@ -65,9 +63,6 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 
 			page.getBody()
 			    .addJavaScriptReference(AngularUISortableReferencePool.AngularUISortable.getJavaScriptReference());
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularUISortableModule());
 		}
 		return page;
 	}
