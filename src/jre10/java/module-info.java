@@ -7,6 +7,7 @@ module com.jwebmp.plugins.angularuisortable {
 	exports com.jwebmp.plugins.angularuisortable;
 
 	requires com.jwebmp.core;
+	requires java.validation;
 	provides IPageConfigurator with AngularUISortablePageConfigurator;
 	provides IAngularModule with AngularUISortableModule;
 }
