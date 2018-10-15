@@ -38,14 +38,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,touch, ui,web ui, framework",
 		pluginSubtitle = "Instantly make UL lists into drag and drop items.",
 		pluginSourceUrl = "https://github.com/angular-ui/ui-sortable",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Sortable/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Sortable",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-UI-Sortable/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-UI-Sortable",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://github.com/angular-ui/ui-sortable",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUISortable.jar/download")
 public class AngularUISortablePageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularUISortablePageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
