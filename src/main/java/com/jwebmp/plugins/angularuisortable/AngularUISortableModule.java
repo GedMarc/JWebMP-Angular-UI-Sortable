@@ -31,7 +31,6 @@ public class AngularUISortableModule
 		implements IAngularModule<AngularUISortableModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularUISortableModule
