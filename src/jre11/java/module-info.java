@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularModule;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angularuisortable.AngularUISortableModule;
-import com.jwebmp.plugins.angularuisortable.AngularUISortablePageConfigurator;
-import com.jwebmp.plugins.angularuisortable.implementations.AngularUISortableExclusionsModule;
-
 module com.jwebmp.plugins.angularuisortable {
 	exports com.jwebmp.plugins.angularuisortable;
 
@@ -14,9 +6,9 @@ module com.jwebmp.plugins.angularuisortable {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularUISortablePageConfigurator;
-	provides IAngularModule with AngularUISortableModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularuisortable.AngularUISortablePageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularuisortable.AngularUISortableModule;
 
-	provides IGuiceScanModuleExclusions with AngularUISortableExclusionsModule;
-	provides IGuiceScanJarExclusions with AngularUISortableExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularuisortable.implementations.AngularUISortableExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularuisortable.implementations.AngularUISortableExclusionsModule;
 }
